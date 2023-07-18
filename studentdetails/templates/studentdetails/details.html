@@ -1,0 +1,16 @@
+{% extends 'studentdetails/base.html'%}{%load static%}{%block title%}Std_Details{%endblock title%}{%block css%}
+
+
+
+<link rel="stylesheet" href="{%static 'studentdetails/details.css'%}">{%endblock css%} {%block content%}
+
+
+
+<a href="/">Home</a>
+
+<h1>Student Name: {{std_details.Name}}</h1>
+
+<h1>Student EamilId: {{std_details.Email}}</h1>
+<h1>Student Phone no: {{std_details.Phone}}</h1>
+
+{% endblock content%}

@@ -1,0 +1,13 @@
+{% extends 'studentdetails/base.html'%}{%load static%}{%block title%}Home{%endblock title%}{%block css%}
+<link rel="stylesheet" href="{%static 'studentdetails/index.css'%}">{%endblock%} {%block content%}
+
+
+
+
+<a href="/">Home</a>
+<ul>{%for i in data%}
+    <li>
+        <a href="{% url 'std-msg' i.slug%}">{{i.Name}}</a>
+    </li>
+    {%endfor%}
+</ul>{%endblock content%}
